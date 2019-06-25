@@ -61,7 +61,7 @@ export default function SiteHeader() {
       <nav
         css={{
           marginLeft: 'auto',
-          overflowX: 'scroll',
+          overflowX: 'auto',
           WebkitOverflowScrolling: 'touch'
         }}
       >
@@ -78,7 +78,14 @@ export default function SiteHeader() {
             margin: '0 0 0 auto',
             overflow: 'auto',
             listStyle: 'none',
-            li: { whiteSpace: 'nowrap' }
+            li: { 
+              whiteSpace: 'nowrap',
+              a: {
+                display: 'inline-block',
+                paddingTop: space[1],
+                paddingBottom: space[1]
+              }
+            }
           }}
         >
           <li>
